@@ -1,0 +1,131 @@
+<style type="text/css">
+	body{
+		background-color: #bce7ff;
+		user-select: none;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		font-size: 13px;
+	}
+	#mainPopup {
+		color: #1b1b1b;
+		font-family: Arial black;
+		font-weight: bold;
+		padding: 10px;
+		height: 220px;
+		width: 190px;
+		font-family: Arial, sans-serif;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	#title{
+		text-align: center;
+		margin: 0px;
+	}
+	#screen {
+		font-family: Arial black;
+		text-align: center;
+		font-size: 20px;
+		cursor: pointer;
+		position: relative;
+		border: solid 3px #999;
+		height: 90px;
+		width: 160px;
+		font-family: Arial, sans-serif;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	#screen-cover{
+		position: absolute;
+		top: 0;
+		color: #ddd;
+		background-color: #1b1b1b;
+		height: 90px;
+		width: 160px;
+		transition: height 0.2s ease-in-out;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		overflow: hidden;
+	}
+	.screen-cover-off{
+		height: 0px !important;
+	}
+	#slider-container{
+		position: relative;
+		cursor: pointer;
+		border: solid 3px #999;
+		background-color: #ccc;
+		position: relative;
+		width: 35px;
+		height: 15px;
+		border-radius: 15px;
+		margin: 0px 10px;
+	}
+	.slider-button-off{
+		right: -1px !important;
+	}
+	#slider-button{
+		position: absolute;
+		background-color: #1b1b1b;
+		width: 15px;
+		height: 15px;
+		border-radius: 15px;
+		right: 21px;
+		transition: right 0.2s ease-in-out;
+	}
+	h1 {
+		font-size: 2em;
+	}
+	#toggle{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	#slider{
+		color: #1b1b1b;
+		display: flex;
+		align-items: center;
+		padding: 10px;
+	}
+	i{
+		font-weight: 100;
+	}
+	#made-by{
+		margin-bottom: 7px;
+	}
+</style>
+<div id="mainPopup">
+	<script src="./src/scripts/toggle.js"></script>
+	<h3 id="title"><u>Thumbnail Spoiler Specs</u></h3>
+	<div id="toggle">
+		<div id="slider">
+			OFF
+			<div id="slider-container">
+				<div id="slider-button">
+				</div>
+			</div>
+			ON
+		</div>
+		<div id="screen">
+			Showing Thumbnails
+			<div id="screen-cover">
+				Blocking Thumbnails
+			</div>
+		</div>
+	</div>
+	<br/>
+	<i id="made-by">
+		Made by <a href="https://www.TomLum.com">
+			Tom Lum
+		</a>
+	</i>
+	<i>
+		Last updated: 7/23/2019
+	</i>
+	<br/>
+</div>
